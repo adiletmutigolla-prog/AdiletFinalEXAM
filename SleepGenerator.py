@@ -5,13 +5,16 @@ class SleepGenerator:
         self.tracker = tracker
 
     def filter_by_month(self, month_num):
+        filtered_list = []
         for log in self.tracker.logs:
             if log.date.month == month_num:
-                yield {
+                log_dict = {
                     "date": str(log.date),
                     "hours": log.hours,
                     "quality": log.quality
                 }
+                filtered_list.append(log_dict)
+        return filtered_list
 
     def export_to_json(self, filename="sleep_data.json"):
         all_data = [
