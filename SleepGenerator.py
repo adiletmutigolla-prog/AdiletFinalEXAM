@@ -1,6 +1,6 @@
 import json
 
-class SleepExporter:
+class SleepGenerator:
     def __init__(self, tracker):
         self.tracker = tracker
 

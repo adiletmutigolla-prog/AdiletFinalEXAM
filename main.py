@@ -1,5 +1,5 @@
 from SleepTracker import SleepTracker
-from SleepGenerator import SleepExporter
+from SleepGenerator import SleepGenerator
 from SleepAnalytics import SleepAnalytics
 from SleepVisualizer import SleepVisualizer
 
@@ -15,7 +15,7 @@ if __name__ == "__main__":
     tracker.add_log("2026-05-22", 7.2, "Орташа")
 
     # 2. Генератор және Экспорт (7-8 Апта)
-    exporter = SleepExporter(tracker)
+    exporter = SleepGenerator(tracker)
     exporter.export_to_json()
 
     print("\n[7-Апта] Генератор арқылы Мамыр (05) айын сүзу:")
