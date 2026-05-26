@@ -33,8 +33,6 @@ if __name__ == "__main__":
 
     # 4. Визуализация және API Жауабы (13-14 Апта)
     visualizer = SleepVisualizer(analytics.df)
-    print("\n[14-Апта] API-дан келетін Сводка:")
-    print(visualizer.get_api_summary())
 
     print("\n[13-Апта] График терезесі ашылуда...")
     visualizer.draw_sleep_line()

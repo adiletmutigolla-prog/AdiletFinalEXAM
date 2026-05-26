@@ -21,13 +21,3 @@ class SleepVisualizer:
         plt.savefig("sleep_trend.png")
         print("📈 График 'sleep_trend.png' болып сақталды.")
         plt.show()
-
-    def get_api_summary(self):
-        avg_h = self.df["hours"].mean()
-        summary = {
-            "status": "success",
-            "total_records": len(self.df),
-            "average_hours": round(avg_h, 1),
-            "verdict": "Ұйқы қалыпты" if avg_h >= 7 else "Ұйқы жеткіліксіз"
-        }
-        return json.dumps(summary, indent=4, ensure_ascii=False)
