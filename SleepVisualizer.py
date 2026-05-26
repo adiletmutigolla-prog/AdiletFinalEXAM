@@ -15,7 +15,6 @@ class SleepVisualizer:
         plt.title("Күндер бойынша ұйқы ұзақтығы")
         plt.xlabel("Күн")
         plt.ylabel("Ұйқы сағаты")
-        plt.grid(True, linestyle="--", alpha=0.5)
         plt.xticks(rotation=45)
         plt.tight_layout()
 
